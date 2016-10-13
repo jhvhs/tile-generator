@@ -165,6 +165,7 @@ class Config(dict):
 		self['all_properties'] = self.get('properties', [])
 		self['total_memory'] = 0
 		self['max_memory'] = 0
+		self['purge_service_brokers'] = self.get('purge_service_brokers', True)
 		self['releases'] = self.get('releases', OrderedDict())
 		for form in self.get('forms', []):
 			properties = form.get('properties', [])
